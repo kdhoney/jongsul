@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+	<h2>Image List</h2>
+	<ul>
+	{% for img in object_list %}
+	<li><a href = "{% url 'upload-detail' img.id %}">{{ img.image.name }}</a></li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
